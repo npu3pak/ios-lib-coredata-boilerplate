@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CoreDataBoilerplate_Example' do
+  pod 'CoreDataBoilerplate', :path => '../'
+
+  target 'CoreDataBoilerplate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
