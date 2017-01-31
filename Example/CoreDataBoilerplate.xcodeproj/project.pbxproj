@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C009951E4053BF00317792 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C009941E4053BF00317792 /* CoreDataManager.swift */; };
+		40C009981E4054B700317792 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40C009961E4054B700317792 /* Model.xcdatamodeld */; };
 		4EE3713211EE226CC1C487CA /* Pods_CoreDataBoilerplate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8165709247ACC50B56504462 /* Pods_CoreDataBoilerplate_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,8 +31,10 @@
 
 /* Begin PBXFileReference section */
 		09C70D66BC0B53D88385B550 /* Pods-CoreDataBoilerplate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBoilerplate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataBoilerplate_Tests/Pods-CoreDataBoilerplate_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		246D9A53F6F18C93FED3D554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		246D9A53F6F18C93FED3D554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3DE0CC1E6A39D0BC74D13C6E /* Pods_CoreDataBoilerplate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataBoilerplate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C009941E4053BF00317792 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		40C009971E4054B700317792 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4300BFEE13C46A3F5056D4D3 /* Pods-CoreDataBoilerplate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBoilerplate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataBoilerplate_Tests/Pods-CoreDataBoilerplate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		43BAC2DA0D59357F5942D69E /* Pods-CoreDataBoilerplate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBoilerplate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataBoilerplate_Example/Pods-CoreDataBoilerplate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CoreDataBoilerplate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataBoilerplate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +47,9 @@
 		607FACE51AFB9204008FA782 /* CoreDataBoilerplate_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataBoilerplate_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C32821515FC9CA3A7B1DF74 /* CoreDataBoilerplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CoreDataBoilerplate.podspec; path = ../CoreDataBoilerplate.podspec; sourceTree = "<group>"; };
+		6C32821515FC9CA3A7B1DF74 /* CoreDataBoilerplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoreDataBoilerplate.podspec; path = ../CoreDataBoilerplate.podspec; sourceTree = "<group>"; };
 		8165709247ACC50B56504462 /* Pods_CoreDataBoilerplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataBoilerplate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C82BEAE99E3DB52F84FAD816 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C82BEAE99E3DB52F84FAD816 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6AEF5C14E8AA4BCF4B4D2AB /* Pods-CoreDataBoilerplate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBoilerplate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataBoilerplate_Example/Pods-CoreDataBoilerplate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				40C009941E4053BF00317792 /* CoreDataManager.swift */,
+				40C009961E4054B700317792 /* Model.xcdatamodeld */,
 			);
 			name = "Example for CoreDataBoilerplate";
 			path = CoreDataBoilerplate;
@@ -215,9 +221,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -359,8 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C009951E4053BF00317792 /* CoreDataManager.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				40C009981E4054B700317792 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +504,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -507,6 +518,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -526,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,6 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -575,6 +589,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40C009961E4054B700317792 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40C009971E4054B700317792 /* Model.xcdatamodel */,
+			);
+			currentVersion = 40C009971E4054B700317792 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreDataBoilerplate
+import CoreData
 
 class ViewController: UIViewController {
+    let fetchedController: NSFetchedResultsController<NSManagedObject> = {
+        return CoreDataManager.instance.context.fetchedController(entityName: "Employee", orderBy: "name")
+    } ()
 
     override func viewDidLoad() {
         super.viewDidLoad()

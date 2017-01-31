@@ -1,0 +1,22 @@
+{
+  "name": "CoreDataBoilerplate",
+  "version": "0.1.0",
+  "summary": "A short description of CoreDataBoilerplate.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/npu3pak/CoreDataBoilerplate",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "npu3pak": "evsafronov.personal@yandex.ru"
+  },
+  "source": {
+    "git": "https://github.com/npu3pak/CoreDataBoilerplate.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CoreDataBoilerplate/Classes/**/*"
+}

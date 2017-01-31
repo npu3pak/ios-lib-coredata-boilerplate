@@ -1,0 +1,16 @@
+PODS:
+  - CoreDataBoilerplate (0.1.0)
+
+DEPENDENCIES:
+  - CoreDataBoilerplate (from `../`)
+
+EXTERNAL SOURCES:
+  CoreDataBoilerplate:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CoreDataBoilerplate: acd829ca46ad460b1f61f1fc9dd5036cc17bb6bb
+
+PODFILE CHECKSUM: 31bff2fd77d80f51b9cf6aa513e39412af1dd40f
+
+COCOAPODS: 1.1.1
