@@ -60,9 +60,9 @@ public extension NSManagedObjectContext {
         }
     }
     
-    public func fetchedController<T>(entityName: String, orderBy sortingKey: String, groupBy sectionNameKeyPath: String? = nil) -> NSFetchedResultsController<T> {
+    public func fetchedController<T>(entityName: String, orderBy sortingKey: String, ascending: Bool = true, groupBy sectionNameKeyPath: String? = nil) -> NSFetchedResultsController<T> {
         let fetchRequest = NSFetchRequest<T>(entityName: entityName)
-        let sortDescriptor = NSSortDescriptor(key: sortingKey, ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: sortingKey, ascending: ascending)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self, sectionNameKeyPath: sectionNameKeyPath, cacheName: nil)
