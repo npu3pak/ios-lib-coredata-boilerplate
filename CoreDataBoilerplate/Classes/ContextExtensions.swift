@@ -60,8 +60,13 @@ public extension NSManagedObjectContext {
         }
     }
     
-    public func fetchedController<T>(entityName: String, orderBy sortingKey: String, ascending: Bool = true, groupBy sectionNameKeyPath: String? = nil) -> NSFetchedResultsController<T> {
+    public func fetchedController<T>(entityName: String, predicate: NSPredicate? = nil, orderBy sortingKey: String, ascending: Bool = true, groupBy sectionNameKeyPath: String? = nil) -> NSFetchedResultsController<T> {
         let fetchRequest = NSFetchRequest<T>(entityName: entityName)
+        
+        if predicate != nil {
+            fetchRequest.predicate = predicate
+        }
+        
         let sortDescriptor = NSSortDescriptor(key: sortingKey, ascending: ascending)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
