@@ -17,7 +17,7 @@ CoreDataBoilerplate is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CoreDataBoilerplate"
+pod "CoreDataBoilerplate", :git => 'https://github.com/npu3pak/ios-lib-coredata-boilerplate.git'
 ```
 
 ## Author
